@@ -1,0 +1,87 @@
+.section1{
+     background-image: url(./img/fondo.png) ;
+     height: 100vh; 
+      width: 100vw;
+      color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  position: fixed; /* Para que quede fijo arriba */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+header .header.img img {
+  height: 40px;
+  width: auto;
+}
+.conteiners-header.items{
+    display: flex;
+    align-items: center;
+}
+
+.header.items a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* Login y botón Suscribirse */
+.secondari-header.items {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+/* Login */
+#login-header {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+
+/* Botón Suscribirse */
+#suscribe-header {
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.section2{
+    background-color: black;
+    color: white;
+}
+
+.section1 a{
+    color: black;
+    text-decoration: none;
+     background-color: white;
+  padding: 10px 24px;       
+  border-radius: 8px;     
+  cursor: pointer; 
+      text-transform: uppercase; 
+   
+}
+
+
