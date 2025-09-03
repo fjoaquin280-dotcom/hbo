@@ -20,16 +20,25 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+  
+}
+body{
+   margin: 0;   
+  padding: 0;
 }
 
 /* Logo */
 header .header.img img {
   height: 40px;
   width: auto;
+  
 }
-.conteiners-header.items{
-    display: flex;
-    align-items: center;
+header div{ 
+  display: flex;
+   gap: 30px; /* separación entre items */
+  margin: 0;
+  padding: 0;
+  
 }
 
 .header.items a {
@@ -38,6 +47,11 @@ header .header.img img {
   font-weight: 600;
   font-size: 14px;
   transition: color 0.3s ease;
+}
+header a{
+  text-decoration: none;
+  color: white;
+   
 }
 
 /* Login y botón Suscribirse */
@@ -71,6 +85,16 @@ header .header.img img {
 .section2{
     background-color: black;
     color: white;
+    display: flex;
+    height: 100vh; 
+      width: 100vw;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+     text-align: center;
+  padding: 40px 20px;
+    
 }
 
 .section1 a{
@@ -85,3 +109,154 @@ header .header.img img {
 }
 
 
+.section2 div{
+  display:flex;
+}
+
+
+.section2 h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.section2 p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+
+
+.section2 .tarjetas {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 24px;
+  margin: 15px;
+  width: 280px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Título del plan */
+.tarjetas h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Lista de beneficios */
+.tarjetas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.tarjetas li {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Precio principal */
+.tarjetas h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 20px 0 15px;
+}
+
+.tarjetas h4 em {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  margin-left: 4px;
+}
+
+/* Botón de seleccionar plan */
+.tarjetas a:not(.text-price) {
+  display: inline-block;
+  background: #3c5060;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tarjetas a:not(.text-price):hover {
+  background: #2b3945;
+}
+
+/* Texto de ahorro */
+.tarjetas .text-price {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.tarjetas .text-price strong {
+  font-weight: bold;
+}
+
+.section4{
+      background-color: black;
+    color: white;
+    display: flex;
+    height: 100vh; 
+      width: 100vw;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+     text-align: center;
+  padding: 40px 20px;
+}
+.section4 a{
+    text-decoration: none;
+  color: black;
+   background-color: white;
+   padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.section5{
+  color: white;
+  background-color: black;
+  display: flex;
+}
+.section6{
+  color: rgb(124, 123, 123);
+  background-color: black;
+    display: flex;
+     align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+     text-align: center;
+  padding: 40px 20px;
+    
+}
+
+footer{
+   color: white;
+  background-color: black;
+  display: flex;
+}
+.section6 h6{
+   font-size: 20px;
+}
+.section5 h5{
+  font-size: 60px;
+   font-family: 'Inter', sans-serif;
+}
+footer a{
+  text-decoration: none;
+  color:white;
+}
+footer div{
+ display: flex;
+}
