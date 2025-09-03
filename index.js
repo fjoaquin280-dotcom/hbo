@@ -1,12 +1,7 @@
-const mensual = document.getElementById("mensual");
-    const anual = document.getElementById("anual");
+function ocultar() {
+  document.getElementById("toggle").classList.add("oculto");
+}
 
-    mensual.addEventListener("click", () => {
-      mensual.classList.add("active");
-      anual.classList.remove("active");
-    });
-
-    anual.addEventListener("click", () => {
-      anual.classList.add("active");
-      mensual.classList.remove("active");
-    });
+function mostrar() {
+  document.getElementById("toggle").classList.remove("oculto");
+}

@@ -61,6 +61,9 @@ header a{
   gap: 15px;
 }
 
+.toggle{
+align-items: center;
+}
 
 /* Login */
 #login-header {
@@ -87,14 +90,14 @@ header a{
     color: white;
     display: flex;
     height: 100vh; 
-      width: 100vw;
+     width: 100vw;
     align-items: center;
     align-content: center;
     flex-direction: column;
     justify-content: center;
      text-align: center;
   padding: 40px 20px;
-    
+  box-sizing: border-box;  
 }
 
 .section1 a{
@@ -107,10 +110,17 @@ header a{
       text-transform: uppercase; 
    
 }
-
+.section2{
+  height: 100vh; 
+      width: 100vw;
+      display: flex;
+}
 
 .section2 div{
   display:flex;
+    align-content: center;
+    align-items: stretch;
+  
 }
 
 
@@ -122,6 +132,10 @@ header a{
 .section2 p {
   color: #555;
   margin-bottom: 30px;
+}
+
+.section2 h4{
+  color: black;
 }
 
 
@@ -201,7 +215,94 @@ header a{
 .tarjetas .text-price strong {
   font-weight: bold;
 }
+.section3{
+  height: 100vh; 
+  width: 100vw;
+      display: flex;
+      background-color: black;
+}
+ .section3 div{
+display: flex;
+color: white;
+}
+.section3 div .kids{
+  background-image:url(./img/Captura\ de\ pantalla\ 2025-09-03\ 113824.png) ;
+  width: 250px;  
+  height: 500px;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: flex-end
+}
 
+.section3 div .reality{
+  background-image:url(./img/Captura\ de\ pantalla\ 2025-09-03\ 113833.png) ;
+   width: 250px;  
+  height: 500px;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+     justify-content: flex-end
+}
+
+.section3 div .novels{
+  background-image:url(./img/Captura\ de\ pantalla\ 2025-09-03\ 113842.png) ;
+   width: 250px;  
+  height: 500px;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+     justify-content: flex-end
+}
+
+.section3 div .cinema{
+  background-image:url(./img/Captura\ de\ pantalla\ 2025-09-03\ 113930.png) ;
+   width: 250px;  
+  height: 500px;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+     justify-content: flex-end
+}
+
+.section3 div .drama{
+  background-image:url(./img/Captura\ de\ pantalla\ 2025-09-03\ 113938.png) ;
+   width: 250px;  
+  height: 500px;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+     justify-content: flex-end
+}
+
+.section3 div .action{
+  background-image:url(./img/Captura\ de\ pantalla\ 2025-09-03\ 113950.png) ;
+   width: 250px;  
+  height: 500px;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+     justify-content: flex-end
+}
+
+.section3 div .comedy{
+  background-image:url(./img/Captura\ de\ pantalla\ 2025-09-03\ 113958.png) ;
+   width: 250px;  
+  height: 500px;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+     justify-content: flex-end
+}
+
+.section3 div .documentary{
+  background-image:url(./img/Captura\ de\ pantalla\ 2025-09-03\ 114016.png) ;
+   width: 250px;  
+  height: 500px;
+   display: flex;
+    justify-content: flex-end
+   
+}
 .section4{
       background-color: black;
     color: white;
@@ -222,14 +323,24 @@ header a{
    padding: 8px 16px;
   border-radius: 5px;
 }
+.section4 h5{
+  font-size: 50px;
+  color:grey;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
 
 .section5{
   color: white;
   background-color: black;
   display: flex;
+   align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+     text-align: center;
 }
 .section6{
-  color: rgb(124, 123, 123);
+  color: white;
   background-color: black;
     display: flex;
      align-items: center;
@@ -240,11 +351,19 @@ header a{
   padding: 40px 20px;
     
 }
-
+.section6 summary{
+  text-decoration: underline;
+}
+.question{
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
 footer{
    color: white;
   background-color: black;
   display: flex;
+  justify-content: center;
 }
 .section6 h6{
    font-size: 20px;
@@ -253,10 +372,32 @@ footer{
   font-size: 60px;
    font-family: 'Inter', sans-serif;
 }
+.section5 h4{
+  font-size: 20px;
+ display: flex;
+ align-items: flex-start;
+}
 footer a{
   text-decoration: none;
   color:white;
 }
 footer div{
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  padding: 25px;
+}
+  footer div .footer .counteiners{
  display: flex;
+ flex-direction: column;
+}
+.footer .link{
+  display: flex;
+  justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.social .media{
+  display: flex;
 }
