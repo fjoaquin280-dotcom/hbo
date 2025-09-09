@@ -1,4 +1,4 @@
-
+// deje todo el java script comentado porque busque como se hacian muchas cosas y para no olvidarme bien que hace cada una.
 document.addEventListener('DOMContentLoaded', () => {
   // Selecciones
   const mensualCards = document.querySelectorAll('.tarjetas.mensual');
@@ -43,19 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (mensualBtn) mensualBtn.addEventListener('click', showMonthly);
   if (anualBtn)   anualBtn.addEventListener('click', showAnnual);
 
-  // ----- Detalles: animar summary cuando se abre/cierra -----
-  // Esto añade una pequeña rotación al <summary> (no cambia texto ni imagenes)
-  document.querySelectorAll('details').forEach(detail => {
-    const summary = detail.querySelector('summary');
-    if (!summary) return;
-    // estilo base para transición (se aplica inline sin tocar CSS)
-    summary.style.transition = 'transform 0.2s ease';
-    // toggle por evento 'toggle'
-    detail.addEventListener('toggle', () => {
-      if (detail.open) summary.style.transform = 'rotate(180deg)';
-      else summary.style.transform = 'rotate(0deg)';
-    });
-  });
+ 
 
   // ----- Mejora: focus visible y accesibilidad simple para botones -----
   [mensualBtn, anualBtn].forEach(btn=>{
@@ -70,5 +58,30 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+// no pude hacerlo andar los cambios de los flyers 
+document.addEventListener("DOMContentLoaded", () => {
+  const botones = document.querySelectorAll(".title.flyers h5");
+  // buscamos solo los div que tienen dos clases (ej: flyers drama)
+  const secciones = document.querySelectorAll(".flyers > div.flyers");
 
+  function ocultarTodo() {
+    secciones.forEach(div => {
+      div.style.display = "none";
+    });
+  }
+
+  // Mostrar drama al inicio
+  ocultarTodo();
+  document.querySelector(".flyers.drama").style.display = "block";
+
+  // Click en los títulos
+  botones.forEach(boton => {
+    boton.addEventListener("click", () => {
+      ocultarTodo();
+      const nombre = boton.id.replace("title-", ""); // drama, realities...
+      const target = document.querySelector(`.flyers${nombre}`);
+      if (target) target.style.display = "block";
+    });
+  });
+});
 

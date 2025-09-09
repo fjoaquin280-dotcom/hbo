@@ -168,7 +168,7 @@ header a{
   background-color: #fff;  
   color: #000;             
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
- padding: 5px 0;     /* asegura altura */
+ padding: 5px 0;     
        
 }
 
@@ -374,6 +374,8 @@ color: white;
     flex-direction: column;
     justify-content: center;
      text-align: center;
+     color: #fff;
+     font-family: Arial, sans-serif;
 }
 .section6{
   color: white;
@@ -387,10 +389,7 @@ color: white;
   padding: 40px 20px;
     
 }
-.section6 summary{
-  text-decoration: underline;
-  color: grey;
-}
+
 .question{
   display: flex;
   flex-direction: column;
@@ -404,11 +403,12 @@ footer{
 }
 .section6 h6{
    font-size: 20px;
-   
+   border-bottom: 1px solid #444; /* línea divisoria */
 }
 .section5 h5{
-  font-size: 60px;
+  font-size: 40px;
    font-family: 'Inter', sans-serif;
+   padding: 15px;
 }
 .section5 h4{
   font-size: 20px;
@@ -427,6 +427,7 @@ footer div{
   display: flex;
   flex-direction: row;
     flex-direction: column;
+    align-items: center;
 }
   footer div .footer .counteiners{
  display: flex;
@@ -445,3 +446,83 @@ footer div{
   display: flex;
   justify-content: center;
 }
+
+.section5 div{
+  display: flex;
+  flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: center
+}
+.scroll-x {
+  display: flex;         
+  overflow-x: auto;     
+  padding: 5px;
+  scrollbar-color: gray black;  
+  scrollbar-width: auto;        /* grosor de la barra */
+}
+
+
+.scroll-x::-webkit-scrollbar {
+  height: 15px; /* grosor de la barra horizontal */
+}
+
+.scroll-x::-webkit-scrollbar-track {
+  background: black;   
+  border-radius: 10px;
+}
+
+.scroll-x::-webkit-scrollbar-thumb {
+  background: gray;    
+  border-radius: 10px;
+}
+
+.scroll-x::-webkit-scrollbar-thumb:hover {
+  background: #666;    }
+
+  /* abanico de preguntas */
+  .questions {
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+}
+
+.questions details {
+  border-bottom: 1px solid #444;
+  padding: 15px 0;
+}
+
+.questions summary {
+  cursor: pointer;
+  list-style: none; /* quita el triángulo por defecto */
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Agregar la flechita personalizada */
+.questions summary::after {
+  content: "⌄";
+  font-size: 20px;
+  color: #aaa;
+  transition: transform 0.3s ease;
+}
+
+/* Cuando se abre, girar la flecha */
+.questions details[open] summary::after {
+  color: #fff;
+}
+
+.answer {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
