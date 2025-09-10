@@ -29,7 +29,7 @@ body{
   background-color: black;
 }
 
-/* Logo */
+
 header .header.img img {
   height: 40px;
   width: auto;
@@ -37,7 +37,7 @@ header .header.img img {
 }
 header div{ 
   display: flex;
-   gap: 30px; /* separación entre items */
+   gap: 30px;
   margin: 0;
   padding: 0;
   
@@ -57,7 +57,7 @@ header a{
    
 }
 
-/* Login y botón Suscribirse */
+
 .secondari-header.items {
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@ header a{
 
 
 
-/* Login */
+
 #login-header {
   color: white;
   text-decoration: none;
@@ -75,7 +75,7 @@ header a{
 }
 
 
-/* Botón Suscribirse */
+
 #suscribe-header {
   background: white;
   color: black;
@@ -186,7 +186,7 @@ header a{
   text-align: left;
 }
 
-/* Título del plan */
+
 .tarjetas h3 {
   font-size: 18px;
   margin-bottom: 15px;
@@ -194,7 +194,7 @@ header a{
   color: black;
 }
 
-/* Lista de beneficios */
+
 .tarjetas ul {
   list-style: none;
   padding: 0;
@@ -207,7 +207,7 @@ header a{
   color: #333;
 }
 
-/* Precio principal */
+
 .tarjetas h4 {
   font-size: 26px;
   font-weight: bold;
@@ -221,7 +221,7 @@ header a{
   margin-left: 4px;
 }
 
-/* Botón de seleccionar plan */
+
 .tarjetas a:not(.text-price) {
   display: inline-block;
   background: #3c5060;
@@ -237,7 +237,7 @@ header a{
   background: #2b3945;
 }
 
-/* Texto de ahorro */
+
 .tarjetas .text-price {
   display: block;
   font-size: 13px;
@@ -403,7 +403,7 @@ footer{
 }
 .section6 h6{
    font-size: 20px;
-   border-bottom: 1px solid #444; /* línea divisoria */
+   border-bottom: 1px solid #444; 
 }
 .section5 h5{
   font-size: 40px;
@@ -460,12 +460,12 @@ footer div{
   overflow-x: auto;     
   padding: 5px;
   scrollbar-color: gray black;  
-  scrollbar-width: auto;        /* grosor de la barra */
+  scrollbar-width: auto;        
 }
 
 
 .scroll-x::-webkit-scrollbar {
-  height: 15px; /* grosor de la barra horizontal */
+  height: 15px;
 }
 
 .scroll-x::-webkit-scrollbar-track {
@@ -481,7 +481,7 @@ footer div{
 .scroll-x::-webkit-scrollbar-thumb:hover {
   background: #666;    }
 
-  /* abanico de preguntas */
+ 
   .questions {
   background: #000;
   color: #fff;
@@ -497,7 +497,7 @@ footer div{
 
 .questions summary {
   cursor: pointer;
-  list-style: none; /* quita el triángulo por defecto */
+  list-style: none; 
   font-size: 18px;
   font-weight: normal;
   color: #fff;
@@ -506,7 +506,7 @@ footer div{
   align-items: center;
 }
 
-/* Agregar la flechita personalizada */
+
 .questions summary::after {
   content: "⌄";
   font-size: 20px;
@@ -514,7 +514,7 @@ footer div{
   transition: transform 0.3s ease;
 }
 
-/* Cuando se abre, girar la flecha */
+
 .questions details[open] summary::after {
   color: #fff;
 }

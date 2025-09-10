@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   botones.forEach(boton => {
     boton.addEventListener("click", () => {
       ocultarTodo();
-      const nombre = boton.id.replace("title-", ""); // drama, realities...
+      const nombre = boton.id.replace("title-", ""); 
       const target = document.querySelector(`.flyers${nombre}`);
       if (target) target.style.display = "block";
     });
